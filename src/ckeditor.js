@@ -6,7 +6,7 @@
  * @license Copyright (c) 2019, JDinABox All rights reserved.
  */
 // The editor creator to use.
-import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
+import BalloonEditorBase from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
@@ -35,7 +35,7 @@ function Markdown( editor ) {
 	editor.data.processor = new GFMDataProcessor();
 }
 
-export default class MarkdownEditor extends ClassicEditorBase { }
+export default class MarkdownEditor extends BalloonEditorBase { }
 
 // Plugins to include in the build.
 MarkdownEditor.builtinPlugins = [
